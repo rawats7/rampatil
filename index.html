@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>PATIL VIP CHANNEL</title>
+
+<style>
+:root {
+  --gold:#D4AF37;
+  --dark:#050505;
+  --card:#141414;
+  --green:#006400;
+  --violet:#4B0082;
+  --red:#8B0000;
+}
+
+/* BODY FIXED */
+body{
+  margin:0;
+  font-family:'Garamond', serif;
+  background:linear-gradient(180deg,#050505,#0b0b0b);
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding-top:50px; /* 👈 FIXES VIP CUT */
+}
+
+/* CARD */
+.card{
+  width:90%;
+  max-width:380px;
+  background:var(--card);
+  border:2px solid var(--gold);
+  border-radius:35px;
+  padding:55px 20px 35px;
+  text-align:center;
+  box-shadow:0 0 25px rgba(212,175,55,0.25);
+  position:relative;
+  overflow:visible;
+}
+
+/* VIP BADGE (FIXED PERFECTLY) */
+.vip-badge{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:linear-gradient(135deg,#D4AF37,#F9E076,#D4AF37);
+  color:#000;
+  font-weight:900;
+  padding:8px 28px;
+  border-radius:25px;
+  font-size:12px;
+  letter-spacing:1px;
+  z-index:100;
+  box-shadow:0 5px 20px rgba(212,175,55,0.5);
+}
+
+/* PROFILE */
+.profile{
+  width:140px;
+  height:140px;
+  margin:10px auto 20px;
+  border-radius:18px;
+  border:3px solid var(--gold);
+  overflow:hidden;
+  box-shadow:0 0 15px rgba(212,175,55,0.3);
+}
+.profile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* TITLE */
+h1{
+  font-size:24px;
+  color:var(--gold);
+  margin:10px 0;
+}
+
+/* SUBTITLE */
+.sub{
+  font-size:14px;
+  margin-bottom:22px;
+  font-family:'Cambria', serif;
+  font-weight:600;
+  letter-spacing:0.5px;
+  color:#e6e6e6;
+}
+
+/* COLOR BOXES */
+.row{
+  display:flex;
+  gap:10px;
+  margin-bottom:25px;
+}
+.box{
+  flex:1;
+  padding:16px 0;
+  border-radius:12px;
+  font-weight:900;
+}
+.green{background:var(--green);}
+.violet{background:var(--violet);}
+.red{background:var(--red);}
+
+/* BUTTON */
+.btn{
+  display:block;
+  text-decoration:none;
+  background:linear-gradient(135deg,#D4AF37,#F9E076);
+  color:#000;
+  padding:16px;
+  border-radius:40px;
+  font-weight:900;
+  font-size:16px;
+}
+
+/* FEATURES BOX */
+.features{
+  margin-top:22px;
+  padding:15px;
+  border:1px solid rgba(212,175,55,0.4);
+  border-radius:12px;
+  background:rgba(255,255,255,0.03);
+  font-family:'Cambria', serif;
+  font-size:15px;
+  font-weight:600;
+  line-height:2;
+  text-align:left;
+}
+
+/* TIMER */
+.timer{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:20px 0;
+}
+.tbox{
+  background:#111;
+  padding:10px;
+  border-radius:10px;
+  width:60px;
+}
+.num{
+  font-size:20px;
+  font-weight:900;
+}
+.lab{
+  font-size:10px;
+  color:#aaa;
+}
+
+/* LIVE */
+.live{
+  font-size:12px;
+  color:#aaa;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:22px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  padding-top:12px;
+}
+.ads{
+  font-size:14px;
+  font-weight:600;
+}
+.ads a{
+  color:var(--gold);
+  text-decoration:none;
+}
+.copy{
+  font-size:10px;
+  color:#666;
+  margin-top:5px;
+}
+</style>
+
+<script>
+let m=15,s=0;
+setInterval(()=>{
+ document.getElementById("m").innerText=String(m).padStart(2,'0');
+ document.getElementById("s").innerText=String(s).padStart(2,'0');
+ if(m===0 && s===0) return;
+ if(s===0){m--; s=59;} else s--;
+},1000);
+</script>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="vip-badge">VIP CHANNEL</div>
+
+<div class="profile">
+<img src="6213057991016124042.jpg">
+</div>
+
+<h1>PATIL  NO 1 PREDICTIONS</h1>
+<div class="sub">99.9% WIN ACCURACY RATE </div>
+
+<div class="row">
+<div class="box green">GREEN</div>
+<div class="box violet">VIOLET</div>
+<div class="box red">RED</div>
+</div>
+
+<a href="https://t.me/+G1CklUR4mtwzNTFl" class="btn">JOIN TELEGRAM FREE</a>
+
+<div class="features">
+<div> ⭐ 100% Winning Sureshot</div>
+<div>♻️ 100% Loss Recovery</div>
+<div>💸 Monthly Income ₹30K – ₹50K</div>                             
+<div>🏆 5+ Years Experience</div>
+<div>🏅 10 Lakh+ Winning</div>
+</div>
+
+<div class="timer">
+<div class="tbox"><div class="num" id="m">15</div><div class="lab">MIN</div></div>
+<div class="tbox"><div class="num" id="s">00</div><div class="lab">SEC</div></div>
+</div>
+
+<div class="live">● ACTIVE VIP SIGNALS</div>
+
+<div class="footer">
+  <div class="ads">
+    Ads Managed by <a href="https://t.me/RamP4p4">RAM PATIL  Marketing Agency</a>
+  </div>
+  <div class="copy">
+    © 2026 All Rights Reserved By Richard Carter 
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
